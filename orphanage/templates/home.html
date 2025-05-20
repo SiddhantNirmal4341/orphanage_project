@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - Orphanage{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="container">
+    <h1>Welcome to Our Orphanage</h1>
+    <p>We are dedicated to providing a loving and caring environment for children in need.</p>
+    <p>Explore our services and become a part of this meaningful journey through adoption, donation, or volunteering.</p>
+</div>
+<section class="donation-breakdown">
+    <div class="donation-content">
+        <div class="donation-text">
+            <h2>Where the Money Goes</h2>
+            <p class="subtitle">A step towards a better tomorrow.</p>
+            <p>Solid Charity is a non-profit organization...</p>
+            <ul>
+                <li>✔️ Education and Prevention</li>
+                <li>✔️ Trauma Care for Children</li>
+                <li>✔️ Fundraising</li>
+                <li>✔️ Research and Advocacy</li>
+                <li>✔️ Culture and Community</li>
+            </ul>
+        </div>
+        <div class="donation-bars">
+            <div class="bar"><span>Education and Prevention 70%</span><div class="progress" style="--width: 70%; --color: #28d6a3;"></div></div>
+            <div class="bar"><span>Trauma Care for Children 65%</span><div class="progress" style="--width: 65%; --color: #f08c54;"></div></div>
+            <div class="bar"><span>Fundraising 60%</span><div class="progress" style="--width: 60%; --color: #f43f5e;"></div></div>
+            <div class="bar"><span>Research and Advocacy 78%</span><div class="progress" style="--width: 78%; --color: #6b5b95;"></div></div>
+            <div class="bar"><span>Culture and Community 89%</span><div class="progress" style="--width: 89%; --color: #f39c12;"></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- Recent News -->
+<section class="info-section">
+    <h2>Recent News</h2>
+    <ul>
+        <li>🎉 Our new education wing was inaugurated last week.</li>
+        <li>🧥 Winter clothing donations are open till December.</li>
+        <li>🧑‍🍳 Volunteers hosted a cooking event for the children.</li>
+    </ul>
+</section>
+
+<!-- Donations Info -->
+<section class="info-section">
+    <h2>Donations Overview</h2>
+    <p>This month we received generous donations from 43 individuals.</p>
+    <p>Top donors: Rahul M. (₹20,000), Priya S. (₹15,000), Anil T. (₹10,000)</p>
+    <p>Thank you for your continued support ❤️</p>
+</section>
+{% endblock %}

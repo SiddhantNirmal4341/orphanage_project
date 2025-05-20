@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Adoption Form - Orphanage{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Adoption Request</h2>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit Request</button>
+    </form>
+</div>
+{% endblock %}

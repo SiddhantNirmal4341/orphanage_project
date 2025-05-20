@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block title %}Join as Volunteer - Orphanage{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h2>Join as a Volunteer</h2>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Join Now</button>
+    </form>
+</div>
+{% endblock %}
